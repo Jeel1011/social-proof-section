@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan';
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+/* main container */
+.container{
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+}
+
+
+/* top side of container */
+.container__top{
+    margin: 127px auto 72px auto;
+    display: flex;
+    gap: 125px;
+}
+
+/* left side of top container */
+.container__top-left .top-section__title{
+    margin-bottom: 10px;
+    width: 445px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1.71px;
+    color: var(--Very-Dark-Magenta);
+}
+.container__top-left .top-section__subtitle{
+    width: 445px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -0.5px;
+    color: var(--Dark-Grayish-Magenta);
+}
+
+/* right side of top container */
+.container__top-right .rating-section__item{
+    padding-left: 32px;
+    text-align: center;
+    align-items: center;
+    width: 445px;
+    height: 56px;
+    display: flex;
+    background: #F7F2F7;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.container__top-right .rating-section__item .rating__title{
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    margin-left: 32px;
+}
+/* 5-star rating img*/
+.container__top-right .rating-section__item .rating__stars img{
+    width: 16.55px;
+    height: 15.77px;
+}
+.container__top-right .rating-section__item:nth-child(2) {
+    margin-left: 47.5px;
+    /* transform: translateX(47.5px); Move the second rating to the right */
+}
+.container__top-right .rating-section__item:nth-child(3) {
+    margin-left: 95px;
+    /* transform: translateX(95px); Move the third rating further to the right */
+}
+
+
+/* Bottom container start */
+
+.container__bottom{
+    display: flex;
+    margin: 0 auto 100px auto;
+    gap: 30px;
+}
+/* css for all 3-comment box */
+.container__bottom .bottom-section__comment{
+    width: 350px;
+    height: 234px;
+    border-radius: 8px;
+    background:var(--Very-Dark-Magenta);
+    padding: 40px 32px;
+    row-gap: 32px;
+}
+/* css for profile inside comment */
+.container__bottom .bottom-section__comment .profile{
+    display: flex;
+}
+.container__bottom .bottom-section__comment .profile .profile__image{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.container__bottom .bottom-section__comment .profile .profile__naming-data{
+    display: flex;
+    flex-direction: column;
+    margin-left: 23px;
+    row-gap: 5px;
+}
+.container__bottom .bottom-section__comment .profile .profile__naming-data .naming-data__name{
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--White);
+}
+.container__bottom .bottom-section__comment .profile .profile__naming-data .naming-data__status{
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--Soft-Pink);
+}
+/* css for message inside comment */
+.container__bottom .bottom-section__comment .comment__text{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.23px;
+    color: var(--White);
+    margin-top: 23px;
+}
+/* CSS for last two comment box */
+.container__bottom .bottom-section__comment:nth-child(2){
+    margin-top: 16px;
+}
+.container__bottom .bottom-section__comment:nth-child(3){
+    margin-top: 32px;
+}
